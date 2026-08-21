@@ -50,7 +50,7 @@
 
                     </div>
                     <div class="card-body">
-                        Isi 
+                        Isi data user
                     </div>
                     <!-- /.card-body -->
 
