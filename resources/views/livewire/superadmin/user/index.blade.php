@@ -52,6 +52,20 @@
 
                 </div>
                 <div class="card-body">
+                    <div class="mb-3 d-flex justify-content-between">
+                        <div class="col-2">
+                            <select class="form-control" wire:model.live="paginate">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control " placeholder="Cari Data User"
+                                wire:model.live="search">
+                        </div>
+                    </div>
                     <div class="table-responsif">
                         <table class="table table-hover">
                             <thead>
@@ -87,6 +101,7 @@
                                 @endforeach
                             </tbody>
                         </table>
+                        {{ $user->links() }}
                     </div>
                 </div>
                 <!-- /.card-body -->
